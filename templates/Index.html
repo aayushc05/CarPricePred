@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Used Car Price</title>
 </head>
 
 <body>
@@ -15,7 +15,18 @@
             <h3>Year</h3>
             <input id="first" name="year" type="number ">
             <h3>How many Kilometers Driven?</h3><input id="second" name="kms_driven" required="required">
+            <h3>What's the Mileage (kmpl)?</h3><input id="third" name="mileage_kmpl" required="required">
+            <h3>What's the Engine (CC)?</h3><input id="fourth" name="engine_cc" required="required">
+            <h3>What's the Maximum Power (BHP)?</h3><input id="fifth" name="max_power_bhp" required="required">
+            <h3>Number of Seats?</h3><input id="sixth" name="seats" required="required">
             <h3>How many owners previously had the car(0, 1, 2, 3, or >4) ?</h3><br><input id="third" name="owner" required="required">
+            <h3>What Is the Company type (Maruti, Tata, Mahindra, Hyundai, others)?</h3><br><select name="company_Maruti" id="company" required="required">
+                <option value="Maruti">Maruti</option>
+                <option value="Tata">Tata</option>
+                <option value="Mahindra">Mahindra</option>
+                <option value="others">others</option>
+                <option value="Hyundai">Hyundai</option>
+            </select>
             <h3>What Is the Fuel type?</h3><br><select name="fuel_Petrol" id="fuel" required="required">
                 <option value="Petrol">Petrol</option>
                 <option value="Diesel">Diesel</option>
@@ -80,6 +91,18 @@
             font-size: 14px;
         }
         
+        #company {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 20px;
+        }
+        
+        #company:hover {
+            background-color: coral;
+        }
+        
         #fuel {
             width: 83px;
             height: 43px;
@@ -93,7 +116,7 @@
         }
         
         #research {
-            width: 99px;
+            width: 125px;
             height: 43px;
             text-align: center;
             border-radius: 14px;
@@ -117,8 +140,8 @@
         }
         
         #sub {
-            width: 120px;
-            height: 43px;
+            width: 125px;
+            height: 50px;
             text-align: center;
             border-radius: 14px;
             font-size: 18px;
@@ -150,6 +173,20 @@
         }
         
         #fourth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #fifth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #sixth {
             border-radius: 14px;
             height: 25px;
             font-size: 20px;
